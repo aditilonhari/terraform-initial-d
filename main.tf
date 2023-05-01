@@ -7,6 +7,11 @@ terraform {
   }
 }
 
+module "vpc" {
+  source  = "app.terraform.io/ILM_Demo_Space/vpc/aws"
+  version = "4.0.1"
+}
+ 
 # Configure the AWS Provider
 provider "aws" {
   region = "us-east-1"
