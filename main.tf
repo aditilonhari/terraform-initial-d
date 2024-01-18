@@ -8,7 +8,7 @@ terraform {
 }
 
 module "vpc" {
-  source  = "app.terraform.io/ILM_Demo_Space/vpc/aws"
+  source  = "terraform-aws-modules/vpc/aws"
   version = "4.0.1"
 }
  
